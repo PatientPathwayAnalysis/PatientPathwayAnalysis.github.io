@@ -1,8 +1,13 @@
 
-var app_bar = new Vue({
+const app_bar = new Vue({
     el: '#app-bar',
     data: {
         pages: [
+            {
+                Description: "Individualised Patient Pathway Analysis (IPPA)",
+                Name: "HOME",
+                URL: "home.html"
+            },
             {
                 Description: "From data to pathways",
                 Name: "Patient Pathway Extraction",
@@ -12,7 +17,17 @@ var app_bar = new Vue({
                 Description: "Visualise patient pathways",
                 Name: "Patient Pathway Visualisation",
                 URL: "https://patientpathwayanalysis.github.io/IPPA-vis-demo/index.html"
-            }
+            },
+            {
+                Description: "FAQ",
+                Name: "FAQ",
+                URL: "faq.html"
+            },
+            {
+                Description: "Contact us",
+                Name: "Contact us",
+                URL: "contact.html"
+            },
         ],
         activePage: 0
     },
@@ -25,3 +40,4 @@ var app_bar = new Vue({
         }
     }
 });
+

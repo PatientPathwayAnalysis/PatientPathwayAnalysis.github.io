@@ -6,30 +6,31 @@
     <title>Individualised Patient Pathway Analysis</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
     <div id="app-bar">
-        <div class="container">
-
-            <ul class="nav nav-tabs" role="tablist">
-                <li v-for="(page, index) in pages"
-                    v-on:click="activePage = index"
-                    v-bind:class="[ activePage === index ? 'active' : '' ]">
-                    <a aria-controls="zero" role="tab" data-toggle="tab">{{ page.Name }}</a>
-                </li>
-            </ul>
-
-            <div class="well well-lg">
-                <h2>{{ pageTitle }}</h2>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">IPPA</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li v-for="(page, index) in pages"
+                        v-on:click="activePage = index"
+                        v-bind:class="[ activePage === index ? 'active' : '' ]">
+                        <a aria-controls="zero" role="tab" data-toggle="tab">{{ page.Name }}</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
 
-        <div class="container">
-            <div class="tabcontent" >
-                <iframe v-bind:src=activeURL style="border:none;width:100%;" scrolling="no"></iframe>
-            </div>
+        <div class="container content" style="margin-top:50px">
+
+            <embed v-bind:src=activeURL type="text/html">
+
         </div>
 
     </div>
@@ -37,5 +38,17 @@
 
 <script src="javascripts/layout.js"></script>
 
+<script>
+
+    //var h = window.innerHeight;
+
+    //document.getElementsByTagName("content")[0].style.height = (h - 50 ) + "px";
+
+
+    //document.body.scroll = "no";
+    //document.body.style.overflow = 'hidden';
+    //document.height = window.innerHeight;
+
+</script>
 
 </html>
