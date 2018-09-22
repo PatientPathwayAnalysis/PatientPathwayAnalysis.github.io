@@ -11,12 +11,12 @@ const app_bar = new Vue({
             {
                 Description: "From data to pathways",
                 Name: "Patient Pathway Extraction",
-                URL: "https://patientpathwayanalysis.github.io/IPPA-ext-demo/index.html"
+                URL: "https://patientpathwayanalysis.github.io/IPPA-ext-demo/"
             },
             {
                 Description: "Visualise patient pathways",
                 Name: "Patient Pathway Visualisation",
-                URL: "https://patientpathwayanalysis.github.io/IPPA-vis-demo/index.html"
+                URL: "https://patientpathwayanalysis.github.io/IPPA-vis-demo/"
             },
             {
                 Description: "FAQ",
