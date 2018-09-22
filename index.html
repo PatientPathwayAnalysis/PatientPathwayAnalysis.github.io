@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Individualised Patient Pathway Analysis</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app-bar">
+        <div class="container">
+
+            <ul class="nav nav-tabs" role="tablist">
+                <li v-for="(page, index) in pages"
+                    v-on:click="activePage = index"
+                    v-bind:class="[ activePage === index ? 'active' : '' ]">
+                    <a aria-controls="zero" role="tab" data-toggle="tab">{{ page.Name }}</a>
+                </li>
+            </ul>
+
+            <div class="well well-lg">
+                <h2>{{ pageTitle }}</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="tabcontent" >
+                <iframe v-bind:src=activeURL style="border:none;width:100%;" scrolling="no"></iframe>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="javascripts/layout.js"></script>
+
+
+</html>
