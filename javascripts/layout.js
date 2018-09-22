@@ -9,14 +9,19 @@ const app_bar = new Vue({
                 URL: "home.html"
             },
             {
+                Description: "Tuberculosis in Taiwan",
+                Name: "Setting: TB in Taiwan",
+                URL: "setting.html"
+            },
+            {
                 Description: "From data to pathways",
-                Name: "Patient Pathway Extraction",
-                URL: "https://patientpathwayanalysis.github.io/IPPA-ext-demo/"
+                Name: "Pathway Extraction",
+                URL: "https://patientpathwayanalysis.github.io/IPPA-ext-demo/index.html"
             },
             {
                 Description: "Visualise patient pathways",
-                Name: "Patient Pathway Visualisation",
-                URL: "https://patientpathwayanalysis.github.io/IPPA-vis-demo/"
+                Name: "Visualisation",
+                URL: "https://patientpathwayanalysis.github.io/IPPA-vis-demo/index.html"
             },
             {
                 Description: "FAQ",

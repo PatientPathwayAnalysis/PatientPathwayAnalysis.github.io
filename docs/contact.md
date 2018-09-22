@@ -1,6 +1,6 @@
 ## Authors
 
-* **Chu-Chang Ku** - [ScHARR](cku1@sheffield.ac.uk)
+* **Chu-Chang Ku** <cku1@sheffield.ac.uk>
 * **Pete Dodd**
 * **Simon Dixon**
 * **Hsien-Ho Lin**
