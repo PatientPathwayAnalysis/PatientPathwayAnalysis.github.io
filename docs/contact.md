@@ -9,9 +9,4 @@
 ## Acknowledgments
 
 * School of Health and Related Research, University of Sheffield
-* School of Public Health, National Taiwan University
-
-
-
-
-
+* College of Public Health, National Taiwan University
