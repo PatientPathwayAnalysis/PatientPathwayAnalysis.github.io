@@ -18,16 +18,14 @@
                     <a class="navbar-brand" href="#">IPPA</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li v-for="(page, index) in pages"
-                        v-on:click="activePage = index"
-                        v-bind:class="[ activePage === index ? 'active' : '' ]">
+                    <li v-for="(page, index) in pages" v-on:click="activePage = index" v-bind:class="[ activePage === index ? 'active' : '' ]">
                         <a aria-controls="zero" role="tab" data-toggle="tab">{{ page.Name }}</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="container content" style="margin-top:50px">
+        <div class="container-fluid content" style="margin-top:50px;margin-left: 10px;margin-right: 10px;">
 
             <embed v-bind:src=activeURL type="text/html">
 
@@ -39,7 +37,6 @@
 <script src="javascripts/layout.js"></script>
 
 <script>
-
     //var h = window.innerHeight;
 
     //document.getElementsByTagName("content")[0].style.height = (h - 50 ) + "px";
@@ -48,7 +45,6 @@
     //document.body.scroll = "no";
     //document.body.style.overflow = 'hidden';
     //document.height = window.innerHeight;
-
 </script>
 
 </html>
